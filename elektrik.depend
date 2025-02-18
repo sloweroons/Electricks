@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1739889342 source:c:\users\berta\code\c\elektrik\main.c
+	<stdio.h>
+	<stdlib.h>
+	"inout.h"
+
+1739815337 c:\users\berta\code\c\elektrik\inout.h
+	<stdio.h>
+	<stdbool.h>
+	<string.h>
+
+1739888539 source:c:\users\berta\code\c\elektrik\inout.c
+	"inout.h"
+
