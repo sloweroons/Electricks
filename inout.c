@@ -7,7 +7,7 @@ char** split(char *text) {
     cards[0] = NULL; cards[1] = NULL; cards[2] = NULL;
     int char_index = 0; int card_index = 0; int card_size = 0; int start_index = 0;
 
-    while (text[char_index] != '\0') {
+    while (text[char_index] != '\0' && char_index < strlen(text)) {
         if (text[char_index] != ' ') {
             if (card_index >= MAX_CARD_NUMBER) {
                 return NULL;
@@ -17,14 +17,17 @@ char** split(char *text) {
             strncpy(cards[card_index], text+start_index, card_size);
             cards[card_index][card_size] = '\0';
         }
-        else {
-            ++card_index;
+        if (text[char_index + 1] == ' ') {
+            ++char_index;
             start_index += card_size + 1;
-            card_size = 0;
+            card_size = 0; ++card_index;
+            while (text[char_index + 1] == ' ') {
+                ++char_index;
+                ++start_index;
+            }
         }
         ++char_index;
     }
-
     return cards;
 }
 

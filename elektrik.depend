@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1739889342 source:c:\users\berta\code\c\elektrik\main.c
+1739895572 source:c:\users\berta\code\c\elektrik\main.c
 	<stdio.h>
 	<stdlib.h>
 	"inout.h"
@@ -9,6 +9,6 @@
 	<stdbool.h>
 	<string.h>
 
-1739888539 source:c:\users\berta\code\c\elektrik\inout.c
+1739895261 source:c:\users\berta\code\c\elektrik\inout.c
 	"inout.h"
 

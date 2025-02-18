@@ -64,7 +64,7 @@ int main()
         }
         int start_index = 0;
         while (buffer[start_index] == ' ') ++start_index;
-        strncpy(input, buffer+start_index, strlen(buffer-start_index)-1);
+        strncpy(input, buffer+start_index, strlen(buffer)-1);
         strncpy(input+strlen(buffer)-start_index-1, "\0", 1);
         smarttext_recognize(input);
         printf("\n");
